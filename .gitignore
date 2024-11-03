@@ -1,0 +1,29 @@
+# Ignora a pasta node_modules, onde as dependências estão instaladas
+node_modules/
+
+# Ignora a pasta dist, onde os arquivos compilados do TypeScript são gerados
+dist/
+
+# Ignora os arquivos de configuração de ambiente
+.env
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de saída de compilação
+out/
+build/
+
+# Cache do Jest
+coverage/
+jest-cache/
+jest-config/
+
+# Cache do TypeScript
+*.tsbuildinfo
+
+# Ignora os arquivos de sistema
+.DS_Store
+Thumbs.db
