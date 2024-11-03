@@ -1,9 +1,18 @@
 language: node_js
 node_js:
-  - "20" 
+  - "16"  # Escolha uma versão estável do Node.js
+
+cache:
+  directories:
+    - node_modules  # Cache para acelerar o tempo de build
 
 install:
   - npm install
+  - npm install typescript jest ts-jest @types/jest --save-dev
+  - npx tsc --init
+  - npx ts-jest config:init
 
 script:
-  - npm test
+  - npm run build    # Comando para compilar o TypeScript
+  - npm test         # Comando para rodar os testes
+
