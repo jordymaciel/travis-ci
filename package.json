@@ -4,6 +4,7 @@
   "description": "Configuration Management Activity - IFPE",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [],

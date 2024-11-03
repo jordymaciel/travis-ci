@@ -1,18 +1,14 @@
 language: node_js
 node_js:
-  - "20"  # Escolha uma versão estável do Node.js
+  - "20"  # Mantenha a versão do Node.js desejada
 
 cache:
   directories:
-    - node_modules  # Cache para acelerar o tempo de build
+    - node_modules  # Cache para acelerar a instalação de dependências
 
 install:
-  - npm install
-  - npm install typescript jest ts-jest @types/jest --save-dev
-  - npx tsc --init
-  - npx ts-jest config:init
+  - npm install  # Instala as dependências do projeto
 
 script:
-  - npm run build    # Comando para compilar o TypeScript
-  - npm test         # Comando para rodar os testes
-
+  - npm run build  # Compila o TypeScript
+  - npm test       # Executa os testes
