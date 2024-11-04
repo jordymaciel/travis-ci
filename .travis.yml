@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "20"  # Mantenha a versão do Node.js desejada
+  - "16"  # Mantem a versão do Node.js desejada
 
 cache:
   directories:
