@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "16"  # Mantem a versão do Node.js desejada
+  - "20"  # Mantem a versão do Node.js desejada
 
 cache:
   directories:
@@ -12,4 +12,3 @@ install:
 script:
   - npm run build  # Compila o TypeScript
   - npm test       # Executa os teste
-  #fim
