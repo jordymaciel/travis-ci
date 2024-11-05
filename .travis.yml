@@ -11,4 +11,5 @@ install:
 
 script:
   - npm run build  # Compila o TypeScript
-  - npm test       # Executa os testes
+  - npm test       # Executa os teste
+  #fim
